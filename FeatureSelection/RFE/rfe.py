@@ -9,6 +9,8 @@ def func_rfe(x, y):
     rfe = RFE(estimator=lr, n_features_to_select=10)
     rfe.fit(x, y)
 
-    print("Num Features: " + str(rfe.n_features_))
-    print("Selected Features: " + str(rfe.support_))
-    print("Feature Ranking: " + str(rfe.ranking_))
+    # print("Num Features: " + str(rfe.n_features_))
+    # print("Selected Features: " + str(rfe.support_))
+    # print("Feature Ranking: " + str(rfe.ranking_))
+
+    return rfe.ranking_
